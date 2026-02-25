@@ -1,0 +1,151 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.bg-home {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  min-height: 100vh;
+}
+
+.bg-about {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  min-height: 100vh;
+}
+
+.bg-contact {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+  min-height: 100vh;
+}
+
+.bg-store {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.hh {
+  background-image: url(./images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.hs{
+  background-image: url(./images/recipe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.hero {
+  padding-top: 80px;
+}
+
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px); 
+  transition:all 0.3s ease;}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+.welcome-card{
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  color: white;
+  transition:all 0.3s ease;
+  height: 170px;
+  gap:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 10px 10px 20px rgba(0,0,0,0.2); */
+}
+
+.welcome-card:hover{
+  transform:translateY(-10px);
+}
+
+.weather-emoji {
+  font-size: 90px;
+  margin: 15px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.bg{
+  background: linear-gradient(90deg, #00c6ff, #9ac0ef);
+}
+
+.bb{
+  background: linear-gradient(135deg,#ff7f50,#ff6347);
+  color:white;
+  border:none;
+  padding:8px 16px;
+  border-radius:25px;
+  transition:0.3s;
+  white-space: nowrap;
+}
+
+.bb:hover{
+  transform:translateY(-3px);
+}
+.card{
+  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,0.8);
+  border-radius:15px;
+  transition:all 0.3s ease;
+}
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.bg-movies {
+  background-image: url(./images/bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.hide-scrollbar {
+  overflow-x: auto;
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* Internet Explorer */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;              /* Chrome, Edge, Safari */
+}
+.movie-card {
+  flex: 0 0 auto;
+  width: 220px;
+}
+
+@media (max-width: 992px) {
+  .movie-card {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie-card {
+    width: 130px;
+  }
+}
